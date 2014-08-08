@@ -1,0 +1,18 @@
+{
+  "name": "Ng",
+  "version": "0.0.1",
+  "description": "Angularjs structure",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.7",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-uglifyjs": "^0.4.2",
+    "gulp-minify-css": "^0.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saif Adnan <saif.mowefak@gmail.com>",
+  "license": "ISC"
+}
