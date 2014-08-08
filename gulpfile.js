@@ -6,6 +6,7 @@ var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 var uglify = require('gulp-uglifyjs');
 var minifyCSS = require('gulp-minify-css');
+var minifyHTML = require('gulp-minify-html');
 
 var uglifyConfig = {
     ext: 'html js css',
@@ -44,9 +45,25 @@ gulp.task('minify', function() {
         .pipe(minifyCSS({keepBreaks:true}))
         .pipe(gulp.dest('public/dist/'))
 });
-gulp.task('default', function () {
-    gulp.start('uglify', 'minify');
+
+
+gulp.task('minify-html', function() {
+    var opts = {comments:false,spare:false};
+
+    gulp.src('./html/index.html')
+        .pipe(minifyHTML(opts))
+        .pipe(gulp.dest('./'));
+
+    gulp.src('./html/partials/*.*')
+        .pipe(minifyHTML(opts))
+        .pipe(gulp.dest('./public/partials/'));
 });
+
+
+gulp.task('default', function () {
+    gulp.start('uglify', 'minify', 'minify-html');
+});
+
 /*
 
 gulp.task('default', function () {
