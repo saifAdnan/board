@@ -1,0 +1,17 @@
+.block(@bgColor: #fff, @fontSize: 12px) {
+  background-color: @bgColor;
+  font-size: @fontSize;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.borderRadius (@bRadius) {
+  border-radius: @bRadius;
+}
+
+.content {
+  .block(#000, 14px);
+  .borderRadius(8px);
+}

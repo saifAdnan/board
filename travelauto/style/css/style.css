@@ -1,0 +1,276 @@
+/*
+    
+  This file contains general CSS for website.
+      
+  In comments:
+  < /> means "end of"
+  @author: Ashraf Samhouri <ashrafperformance@gmail.com> - skype: ashrafsamhouri
+  
+*/
+
+
+/* Simple Reset Styles */
+body { margin:0;padding:0; }
+h1,h2,h3,h4,h5,h6 { margin:0; }
+ul,li { margin:0;padding:0;list-style-type:none; }
+
+
+/* General Styles */
+.center-text { text-align:center; }
+.center-text h2 { font:bold 36px Lato;color:#34495e; }
+.center-text h4 { font:24px Lato;color:#34495e; }
+.center-text h4 span { color:#e9752f; }
+.align-right { text-align:right; }
+.required { color:#f55b00; }
+
+	/* Orange Button */
+	.btn-orange { color: #fff;background-color: #e9752f;border-color: #e9752f; }
+	.btn-orange:hover,.btn-orange:focus,.btn-orange:active,.btn-orange.active,.open .dropdown-toggle.btn-orange { color: #fff;background-color: #cc5d1a;border-color: #cc5d1a; }
+	.btn-orange:active,.btn-orange.active,.open .dropdown-toggle.btn-orange { background-image: none; }
+	.btn-orange.disabled,.btn-orange[disabled],fieldset[disabled] .btn-orange,.btn-orange.disabled:hover,.btn-orange[disabled]:hover,fieldset[disabled] .btn-orange:hover,.btn-orange.disabled:focus,.btn-orange[disabled]:focus,fieldset[disabled] .btn-orange:focus,.btn-orange.disabled:active,.btn-orange[disabled]:active,fieldset[disabled] .btn-orange:active, .btn-orange.disabled.active, .btn-orange[disabled].active, fieldset[disabled] .btn-orange.active { background-color: #dfb094;border-color: #dfb094; }
+	.btn-orange .badge { color: #d95100;background-color: #fff; }
+
+	/* Red Button */
+	.btn-red { color: #fff;background-color: #e74c3c;border-color: #e74c3c; }
+	.btn-red:hover,.btn-red:focus,.btn-red:active,.btn-red.active,.open .dropdown-toggle.btn-red { color: #fff;background-color: #cd3020;border-color: #cd3020; }
+	.btn-red:active,.btn-red.active,.open .dropdown-toggle.btn-red { background-image: none; }
+	.btn-red.disabled,.btn-red[disabled],fieldset[disabled] .btn-red,.btn-red.disabled:hover,.btn-red[disabled]:hover,fieldset[disabled] .btn-red:hover,.btn-red.disabled:focus,.btn-red[disabled]:focus,fieldset[disabled] .btn-red:focus,.btn-red.disabled:active,.btn-red[disabled]:active,fieldset[disabled] .btn-red:active, .btn-red.disabled.active, .btn-red[disabled].active, fieldset[disabled] .btn-red.active { background-color: #dfb094;border-color: #dfb094; }
+	.btn-red .badge { color: #d95100;background-color: #fff; }
+
+	/* White Button */
+	.btn-white { color:#2c3e50;background-color: #fff;border:2px #bdc3c7 solid;padding-top:8px;padding-bottom:8px; }
+	.select .btn-white .caret { border-bottom-color:#bdc3c7;border-top-color:#bdc3c7; }
+	.btn-white:hover,.btn-white:focus,.btn-white:active,.btn-white.active,.open .dropdown-toggle.btn-white { color:#2c3e50;background-color: #fff;border:2px #bdc3c7 solid;padding-top:8px;padding-bottom:8px; }
+	.btn-white:active,.btn-white.active,.open .dropdown-toggle.btn-white { background-image: none; }
+	.btn-white.disabled,.btn-white[disabled],fieldset[disabled] .btn-white,.btn-white.disabled:hover,.btn-white[disabled]:hover,fieldset[disabled] .btn-white:hover,.btn-white.disabled:focus,.btn-white[disabled]:focus,fieldset[disabled] .btn-white:focus,.btn-white.disabled:active,.btn-white[disabled]:active,fieldset[disabled] .btn-white:active, .btn-white.disabled.active, .btn-white[disabled].active, fieldset[disabled] .btn-white.active { background-color: #dfb094;border-color: #dfb094; }
+	.btn-white .badge { color: #d95100;background-color: #fff; }
+
+	/* Other Controls */
+	.checkbox, .radio { padding-left:27px;display:inline-block;position:relative; }
+	.checkbox.checked, .radio.checked { color:#e9752f; }
+	.checkbox.checked .second-icon, .radio.checked .second-icon { color:#e9752f; }
+	.form-group.focus .input-group-btn .btn, .input-group.focus .input-group-btn .btn { border-color:#e9752f;color:#e9752f; }
+	.ui-datepicker .ui-datepicker-header { background-color:#e9752f; }
+	.ui-datepicker { border-color:#e9752f; }
+	.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { border-color:#e9752f; }
+	.ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover { background-color:#c25b1c; }
+	.ui-datepicker .ui-state-active { background-color:#e9752f; }
+	.ui-datepicker:before { border-color:transparent transparent #e9752f; }
+	.select .btn, .select { width:100%; }
+	.dropdown-menu { width:100%; }
+	.input-group-btn:first-child > .btn { margin-right:-15px; }
+	.form-control { font-size:13px; }
+	.input-group .btn { padding-left:7px;padding-right:7px; }
+	.dropdown-menu { max-height:300px !important; }
+	.dropdown-menu { background-color:#fff;border:2px #e9752f solid; }
+	.dropdown-arrow { border-top-color:#e9752f !important;border-bottom-color:#e9752f !important; }
+	.dropdown-menu li a { color:#000; }
+	.dropdown-menu li a:hover, .dropdown-menu li.selected a { background-color:#e9752f !important;color:#fff !important; }
+	.ui-datepicker-group-first .ui-datepicker-calendar { border-right:1px #DBDBDB solid; }
+
+	/* Typeahead */
+	.form-group.focus .twitter-typeahead .tt-query,.form-group.focus .twitter-typeahead .tt-hint,.twitter-typeahead .tt-query:focus,.twitter-typeahead .tt-hint:focus,.twitter-typeahead .tt-dropdown-menu { border-color: #e9752f; }
+	.tt-sep { background:#eeedea;font:bold 14px Lato;color:#2c3e50;padding:9px;text-align:left; }
+	.tt-suggestion { font:14px Lato;color:#6a747e;text-align:left; }
+	.tt-suggestion.airport { background:url(../images/airport-icon.png) no-repeat 9px 9px;padding-left:20px; }
+	.tt-suggestion.airport.tt-cursor { background-image:url(../images/airport-icon-hover.png); }
+	.tt-suggestion.city { background:url(../images/city-icon.png) no-repeat 12px 9px;padding-left:20px; }
+	.tt-suggestion.city.tt-cursor { background-image:url(../images/city-icon-hover.png); }
+	.tt-suggestion img.flag { float:right;margin-left:10px; }
+	.tt-suggestion.tt-cursor { background-color:#e9752f;color:#fff; }
+	.form-control.typeahead { background-color:#fff !important; }
+
+
+/* General and Customized Containers */
+.container { width:100%;max-width:940px; }
+#header .container { max-width:1200px; }
+
+
+/* Header */
+#header { height:67px;border-bottom:3px #eeefef solid; }
+#header .logo { margin-top:21px; }
+@media (max-width: 450px) {
+	#header .logo img { width:112px; }
+}
+
+	/* Header Top Links */
+	#header .top-links > li { font:14px Lato, sans-serif;line-height:14px;padding:26.5px 26px;border-left:1px #e9e9e9 solid; }
+	#header .top-links > li > a { color:#5d5b5b; }
+	#header .top-links > li a:hover { color:#000; }
+
+	@media (max-width: 450px) {
+		#header .top-links > li { padding:26.5px 12px; }
+	}
+
+	#header .top-links .currency { padding:14px 10px !important;width:105px }
+	#header .top-links .currency .select { margin-bottom:0; }
+	#header .top-links .currency .select .btn { border:none; }
+	#header .top-links .currency .select .filter-option { font-size:14px; }
+	#header .top-links .currency .dropdown-menu li a:hover { color:#fff; }
+
+	@media (max-width:450px) {
+		#header .top-links .currency .select .dropdown-inverse li > a { font-size:12px !important;padding-top:3px;padding-bottom:3px; }
+		#header .top-links .currency { padding:14px 6px !important;width:60px }
+		#header .top-links .currency .select .btn { padding-left:0px;padding-right:0px; }
+		#header .top-links .currency .select .filter-option { font-size:14px;left:3px;right:20px; }
+		#header .top-links .currency .select .btn-white .caret { right:3px; }
+	}
+
+
+/* Homepage Promotional Text */
+.promo-text { /*margin-top:94px;*/margin-top:5%; }
+.promo-text h4 { margin-top:7px; }
+
+@media (max-width: 450px) {
+	.promo-text { margin-top:5%; }
+	.center-text h2 { font:bold 27px Lato;color:#34495e; }
+	.center-text h4 { font:15px Lato;color:#34495e; }
+}
+
+
+/* Search Panel */
+.search-panel .nav-pills { margin-top:27px;border-radius:6px;border:2px #bdc3c7 solid;-webkit-box-shadow:0px 0px 9px 0px rgba(184, 184, 179, 0.85);-moz-box-shadow:0px 0px 9px 0px rgba(184, 184, 179, 0.85);box-shadow:0px 0px 9px 0px rgba(184, 184, 179, 0.85); }
+.search-panel .nav-pills > li > a {  border-left:none;background-color:#fff;color:#34495e;font:bold 16px Lato; }
+.search-panel .nav-pills > li:first-child > a { border-radius:4px 0 0 4px; }
+.search-panel .nav-pills > li:last-child > a { border-radius:0 4px 4px 0; }
+
+@media (max-width: 767px) {
+	.search-panel .nav-pills { float:none !important; }
+	.search-panel .nav-pills > li { float: none;display: block; }
+	.search-panel .nav-pills > li:first-child > a { border-radius: 6px 6px 0 0; }
+	.search-panel .nav-pills > li:last-child > a { border-radius: 0 0 6px 6px; }
+}
+
+.search-panel .nav-pills > li > a:hover, .nav-pills > li > a:focus { background-color: #f1f1f1; }
+.search-panel .nav-pills > li > a:active { background-color: #e9752f; }
+.search-panel .nav-pills > li.active > a, .nav-pills > li.active > a:hover { background-color:#e9752f;color:#fff; }
+
+.search-panel-contents { margin-top:24px;padding:3% 3.4%;border:2px #bdc3c7 solid;border-radius:6px;-webkit-box-shadow:0px 0px 9px 0px rgba(184, 184, 179, 0.85);-moz-box-shadow:0px 0px 9px 0px rgba(184, 184, 179, 0.85);box-shadow:0px 0px 9px 0px rgba(184, 184, 179, 0.85);color:#414545;font:14px Lato; }
+
+.search-panel .form-control { border:2px #bdc3c7 solid;color:#2c3e50 }
+.search-panel .form-control:focus { border:2px #e9752f solid;color:#34495e; }
+.search-panel .form-control:focus { border:2px #e9752f solid;color:#34495e; }
+
+.search-panel-contents .label-row { height:43px }
+.search-panel-contents .label-col { padding-top:12px;padding-bottom:12px; }
+@media (max-width: 992px) {
+	.search-panel-contents .col-xs-12 { text-align:center; }
+	.recommendations .review { text-align:center; }
+	.recommendations .stars { margin:0 auto; }
+	.recommendations .reviewer { text-align:center; }
+}
+
+.search-panel-contents .btn-submit { width:100%; }
+.drop-off-location-row { display:none; }
+
+.car-rental { display:block; }
+.car-and-driver { display:none; }
+
+.city-via-model { display:none !important; }
+.remove-add-city-via-col { text-align:right;font:13px Lato;color:#e9752f;padding-top:10px; }
+.remove-add-city-via-col a { font:13px Lato;color:#e9752f; }
+.remove-add-city-via-col a:hover { color:#c65815; }
+.car-and-driver-submit-row .btn-submit { width:100% }
+.remove-city-via-container { display:none; }
+
+.car-and-driver-tab .plus { font-size: 14px;position: relative;top: 1px;font-family: arial; }
+.car-and-driver .duration-col .select { display:none; }
+
+.search-panel .form-control:hover { border-color:#e9752f; }
+.search-panel .input-group:hover .btn, .search-panel .input-group:hover .form-control { border-color:#e9752f; }
+.search-panel .select:hover .btn { border-color:#e9752f; }
+
+/* Fading Reviews Section */
+.recommendations { margin-top:28px; }
+.recommendations .agency { text-align:center;font:bold 14px Lato;color:#2c3e50;border-right:1px #bdc3c7 solid; }
+.recommendations .agency img { margin-bottom:10px; }
+.recommendations .review { font:bold 18px Lato;color:#2c3e50;padding-top:10px; }
+
+.recommendations .rating { margin-top:10px; }
+.recommendations .stars { width:80px;height:16px;background:url(../images/star-empty.png); } 
+.recommendations .stars > div { transition:all 0.4s; }
+.recommendations .stars-1 { width:16px;height:16px;background:url(../images/star-full.png); } 
+.recommendations .stars-2 { width:32px;height:16px;background:url(../images/star-full.png); } 
+.recommendations .stars-3 { width:48px;height:16px;background:url(../images/star-full.png); } 
+.recommendations .stars-4 { width:64px;height:16px;background:url(../images/star-full.png); } 
+.recommendations .stars-5 { width:80px;height:16px;background:url(../images/star-full.png); } 
+
+.recommendations .reviewer { color:#2c3e50;font:bold 14px Lato;padding-top:5px; }
+
+
+/* Agencies Slider */
+.agencies-slider { background-color:#f5f3f3;padding:42px 0;margin-top:45px; }
+.agencies-slider ul li { float:left;text-align:center; }
+.agencies-slider .slider-left-arrow { float:left;margin-top:0; }
+.agencies-slider .slider-right-arrow { float:right;margin-top:0; }
+.agencies-slider .slider-container { margin:0 30px 0 40px; }
+
+
+/* Destinations Slider */
+.destinations-slider { margin-top:53px; }
+.destinations-slider ul li { float:left; }
+.destinations-slider ul li > img { border-radius:5px; }
+.destinations-slider .slider-left-arrow { float:left;margin-top:62px; }
+.destinations-slider .slider-right-arrow { float:right;margin-top:62px; }
+.destinations-slider .slider-container { margin:40px 30px 0 40px; }
+.destinations-slider ul li .desc-row { margin-top:12px;font:bold 14px Lato;color:#606060; }
+.destinations-slider ul li .desc-row  strong { font:bold 16px Lato;display:inline-block;padding-bottom:4px;color:#606060; }
+.destinations-slider ul li .desc-row img { margin-top:3px; }
+
+
+/* Mailing List Bar */
+.mailing-list { padding:45px 0;background-color:#b4b3b3;margin-top:100px; }
+.mailing-list .form-control { border:none;background:transparent;font:bold 35px Lato;color:#fff; }
+.mailing-list ::-webkit-input-placeholder { color:#fff;opacity:0.6; }
+.mailing-list :-moz-placeholder { color:#fff;opacity:0.6; }
+.mailing-list ::-moz-placeholder { color:#fff;opacity:0.6; }
+.mailing-list :-ms-input-placeholder { color:#fff;opacity:0.6; }
+.mailing-list .btn-red { width:100%;font:17px Lato; }
+
+@media (max-width: 992px) {
+	.mailing-list { padding:35px 0; }
+	.mailing-list .form-control { font-size:27px; }
+	.mailing-list .subscribe-col { margin-top:15px; }
+}
+
+@media (max-width: 550px) {
+	.mailing-list { padding:25px 0; }
+	.mailing-list .form-control { font-size:20px; }
+	.mailing-list .subscribe-col { margin-top:8px; }
+}
+
+
+/* Footer */
+.footer { background:#f4f5f6;padding:25px 10px; }
+.footer .medium-font { font:16px Lato;color:#34495e;margin-bottom:33px; }
+.footer .medium-font a { color:#e74c3c; }
+.footer .medium-font a:hover { color:#c73020; }
+.footer .follow-phrase { font:bold 18px Lato;color:#34495e;margin:40px 0 15px 0; }
+.footer .social-icons a { display:inline-block;width:34px;height:34px;background:url(../images/footer-social-icons.png); }
+.footer .social-icons a.twitter-icon { background-position:0 0; }
+.footer .social-icons a.twitter-icon:hover { background-position:0 -34px; }
+.footer .social-icons a.facebook-icon { background-position:-34px 0; }
+.footer .social-icons a.facebook-icon:hover { background-position:-34px -34px; }
+.footer .social-icons a.linkedin-icon { background-position:-68px 0; }
+.footer .social-icons a.linkedin-icon:hover { background-position:-68px -34px; }
+.footer .social-icons a.pinterest-icon { background-position:-102px 0; }
+.footer .social-icons a.pinterest-icon:hover { background-position:-102px -34px; }
+
+.footer .footer-list-title { font:bold 18px Lato;color:#34495e; }
+.footer .footer-list li { margin-top:14px;line-height:16px; }
+.footer .footer-list li a { font:16px Lato;color:#7f8c8d;line-height:16px;display:block; }
+.footer .footer-list li a:hover { color:#000; }
+.footer .copyrights { font:12px Lato;color:#a2abac;margin-top:10px; }
+.footer .copyrights a { color:#e74c3c; }
+
+@media (max-width: 992px) {
+	.footer-lists { margin-top:15px !important; }
+	.footer-list-title { fon-size:16px !important; }
+	.footer-list li { margin-top:3px !important; }
+	.footer-list a { font-size:14px !important; }
+	.norton-secured { text-align:center;margin-top:15px; }
+}
+
+.footer .breadcrumb { text-align:right;font:13px Lato;color:#34495e;margin-top:25px; }
+.footer .breadcrumb a { color:#34495e; }
+.footer .breadcrumb .current { color:#e74c3c; }
