@@ -15,8 +15,8 @@ var uglifyConfig = {
         ng: [
             'public/js/app.js',
             'public/js/controllers/*.*',
-            'public/js/services/.*',
-            'public/js/directives/.*'
+            'public/js/services/*.*',
+            'public/js/directives/*.*'
         ],
         lib: [
             'public/lib/*.*'

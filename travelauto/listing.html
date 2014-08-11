@@ -11,6 +11,7 @@
         <link href="./style/css/flat-ui.css" rel="stylesheet">
         <link href="./style/css/style.css" rel="stylesheet">
         <link href="./style/css/ui.css" rel="stylesheet">
+        <link href="./style/css/jquery.mCustomScrollbar.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -57,6 +58,9 @@
             <!-- search options -->
             <div class="search-options">
                 <div class="row">
+                    <div class="caption">
+                        Car Renter
+                    </div>
                     <div class="section">
                         <img class="icon" src="./style/images/car.png" alt="car" width="21" height="12"/>
                         <div class="pull-left">
@@ -101,55 +105,64 @@
 
                         <div id="location" class="body panel-collapse collapse in">
                             <form action="#" method="GET">
-                                <label class="checkbox" for="location-all">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="all" id="location-all" data-toggle="checkbox">
-                                    <span class="driver-aged">All Locations</span>
-                                </label>
-                                <label class="checkbox" for="location-bur_dubai">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="bur_dubai" id="location-bur_dubai" data-toggle="checkbox">
-                                    <span class="driver-aged">Bur Dubai</span>
-                                </label>
-                                <label class="checkbox" for="location-jabel_ali">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="jabel_ali" id="location-jabel_ali" data-toggle="checkbox">
-                                    <span class="driver-aged">Jebel Ali</span>
-                                </label>
-                                <label class="checkbox" for="location-railway_station">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="railway_station" id="location-railway_station" data-toggle="checkbox">
-                                    <span class="driver-aged">Railway Station</span>
-                                </label>
-                                <label class="checkbox" for="location-hotels">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="hotels" id="location-hotels" data-toggle="checkbox">
-                                    <span class="driver-aged">Hotels</span>
-                                </label>
-                                <label class="checkbox" for="location-airport">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="airport" id="location-airport" data-toggle="checkbox">
-                                    <span class="driver-aged">Airport</span>
-                                </label>
-
+                                <div class="content mCustomScrollbar">
+                                    <label class="checkbox" for="location-all">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="all" id="location-all" data-toggle="checkbox">
+                                        <span class="driver-aged">All Locations</span>
+                                    </label>
+                                    <label class="checkbox" for="location-bur_dubai">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="bur_dubai" id="location-bur_dubai" data-toggle="checkbox">
+                                        <span class="driver-aged">Bur Dubai</span>
+                                    </label>
+                                    <label class="checkbox" for="location-jabel_ali">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="jabel_ali" id="location-jabel_ali" data-toggle="checkbox">
+                                        <span class="driver-aged">Jebel Ali</span>
+                                    </label>
+                                    <label class="checkbox" for="location-railway_station">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="railway_station" id="location-railway_station" data-toggle="checkbox">
+                                        <span class="driver-aged">Railway Station</span>
+                                    </label>
+                                    <label class="checkbox" for="location-hotels">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="hotels" id="location-hotels" data-toggle="checkbox">
+                                        <span class="driver-aged">Hotels</span>
+                                    </label>
+                                    <label class="checkbox" for="location-airport">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="airport" id="location-airport" data-toggle="checkbox">
+                                        <span class="driver-aged">Airport</span>
+                                    </label>
+                                    <label class="checkbox" for="location-airport">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="airport" id="location-airport" data-toggle="checkbox">
+                                        <span class="driver-aged">For scroll</span>
+                                    </label>
+                                </div>
                                 <div class="ftr">
                                     <button class="btn btn-xs btn-orange" type="submit">Apply</button>
                                     <button class="btn btn-xs btn-default" type="submit">Reset</button>
@@ -171,15 +184,16 @@
 
                         <div id="totalCost" class="body panel-collapse collapse in">
                             <form action="#" method="GET">
-                                <label class="cost_from" for="cost_from">
-                                    from
-                                    <input type="text" name="cost_from" id="cost_from" class="form-control input-sm"/>
-                                </label>
-                                <label for="cost_to">
+                                <div class="content mCustomScrollbar">
+                                    <label class="cost_from" for="cost_from">
+                                        from
+                                        <input type="text" name="cost_from" id="cost_from" class="form-control input-sm"/>
+                                    </label>
+                                    <label for="cost_to">
                                     to
                                     <input type="text" name="cost_from" id="cost_to" class="form-control input-sm"/>
                                 </label>
-
+                                </div>
                                 <div class="ftr">
                                     <button class="btn btn-xs btn-orange">Apply</button>
                                     <button class="btn btn-xs btn-default">Reset</button>
@@ -201,7 +215,9 @@
 
                         <div id="pricePerDay" class="body panel-collapse collapse">
                             <form action="#" method="GET">
-                                <h3>EMPTY</h3>
+                                <div class="content mCustomScrollbar">
+                                    <h3>EMPTY</h3>
+                                </div>
                             </form>
                         </div>
 
@@ -219,7 +235,9 @@
 
                         <div id="rentalAgency" class="body panel-collapse collapse ">
                             <form action="#" method="GET">
-                                <h3>EMPTY</h3>
+                                <div class="content mCustomScrollbar">
+                                    <h3>EMPTY</h3>
+                                </div>
                             </form>
                         </div>
 
@@ -237,47 +255,48 @@
 
                         <div id="carType" class="body panel-collapse collapse in">
                             <form action="#" method="GET">
-                                <label class="checkbox" for="car-all">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="all" id="car-all" data-toggle="checkbox">
-                                    <span class="driver-aged">All Cars</span>
-                                </label>
-                                <label class="checkbox" for="car-micro">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="car-micro" id="car-micro" data-toggle="checkbox">
-                                    <span class="driver-aged">Micro</span>
-                                </label>
-                                <label class="checkbox" for="car-economy">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="car-economy" id="car-economy" data-toggle="checkbox">
-                                    <span class="driver-aged">Economy</span>
-                                </label>
-                                <label class="checkbox" for="car-compact">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="compact" id="car-compact" data-toggle="checkbox">
-                                    <span class="driver-aged">Compact</span>
-                                </label>
-                                <label class="checkbox" for="car-standart">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="standart" id="car-standart" data-toggle="checkbox">
-                                    <span class="driver-aged">Standard</span>
-                                </label>
-
+                                <div class="content mCustomScrollbar">
+                                    <label class="checkbox" for="car-all">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="all" id="car-all" data-toggle="checkbox">
+                                        <span class="driver-aged">All Cars</span>
+                                    </label>
+                                    <label class="checkbox" for="car-micro">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="car-micro" id="car-micro" data-toggle="checkbox">
+                                        <span class="driver-aged">Micro</span>
+                                    </label>
+                                    <label class="checkbox" for="car-economy">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="car-economy" id="car-economy" data-toggle="checkbox">
+                                        <span class="driver-aged">Economy</span>
+                                    </label>
+                                    <label class="checkbox" for="car-compact">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="compact" id="car-compact" data-toggle="checkbox">
+                                        <span class="driver-aged">Compact</span>
+                                    </label>
+                                    <label class="checkbox" for="car-standart">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="standart" id="car-standart" data-toggle="checkbox">
+                                        <span class="driver-aged">Standard</span>
+                                    </label>
+                                </div>
                                 <div class="ftr">
                                     <button class="btn btn-xs btn-orange" type="submit">Apply</button>
                                     <button class="btn btn-xs btn-default" type="submit">Reset</button>
@@ -296,34 +315,34 @@
                                 </span>
                             </a>
                         </div>
-
                         <div id="otherPreferences" class="body panel-collapse collapse in">
                             <form action="#" method="GET">
-                                <label class="checkbox" for="other-automatic">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="automatic" id="other-automatic" data-toggle="checkbox">
-                                    <span class="driver-aged">Automatic Transmissions</span>
-                                </label>
-                                <label class="checkbox" for="other-manual">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="other-manual" id="other-manual" data-toggle="checkbox">
-                                    <span class="driver-aged">Manual Transmissions</span>
-                                </label>
-                                <label class="checkbox" for="other-airConditioning">
-                                    <span class="icons">
-                                        <span class="first-icon fui-checkbox-unchecked"></span>
-                                        <span class="second-icon fui-checkbox-checked"></span>
-                                    </span>
-                                    <input type="checkbox" value="other-airConditioning" id="other-airConditioning" data-toggle="checkbox">
-                                    <span class="driver-aged">Air Conditioning</span>
-                                </label>
-                                <label class="checkbox" for="other-unlimitedMileage">
+                                <div class="content mCustomScrollbar">
+                                    <label class="checkbox" for="other-automatic">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="automatic" id="other-automatic" data-toggle="checkbox">
+                                        <span class="driver-aged">Automatic Transmissions</span>
+                                    </label>
+                                    <label class="checkbox" for="other-manual">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="other-manual" id="other-manual" data-toggle="checkbox">
+                                        <span class="driver-aged">Manual Transmissions</span>
+                                    </label>
+                                    <label class="checkbox" for="other-airConditioning">
+                                        <span class="icons">
+                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                            <span class="second-icon fui-checkbox-checked"></span>
+                                        </span>
+                                        <input type="checkbox" value="other-airConditioning" id="other-airConditioning" data-toggle="checkbox">
+                                        <span class="driver-aged">Air Conditioning</span>
+                                    </label>
+                                    <label class="checkbox" for="other-unlimitedMileage">
                                     <span class="icons">
                                         <span class="first-icon fui-checkbox-unchecked"></span>
                                         <span class="second-icon fui-checkbox-checked"></span>
@@ -331,15 +350,13 @@
                                     <input type="checkbox" value="unlimitedMileage" id="other-unlimitedMileage" data-toggle="checkbox">
                                     <span class="driver-aged">Unlimited mileage</span>
                                 </label>
-
-
+                                </div>
                                 <div class="ftr">
                                     <button class="btn btn-xs btn-orange" type="submit">Apply</button>
                                     <button class="btn btn-xs btn-default" type="submit">Reset</button>
                                 </div>
                             </form>
                         </div>
-
                     </div>
                     <!-- Seating Capacity -->
                     <div class="search-filter-section">
@@ -351,25 +368,24 @@
                                 </span>
                             </a>
                         </div>
-
                         <div id="seatingCapacity" class="body panel-collapse collapse in">
                             <form action="#" method="GET">
-                                <label class="cost_from" for="seating_from">
-                                    from
-                                    <input type="text" name="seating_from" id="seating_from" class="form-control input-sm">
-                                </label>
-                                <label for="seating_to">
-                                    to
-                                    <input type="text" name="seating_to" id="seating_to" class="form-control input-sm">
-                                </label>
-
+                                <div class="content mCustomScrollbar">
+                                    <label class="cost_from" for="seating_from">
+                                        from
+                                        <input type="text" name="seating_from" id="seating_from" class="form-control input-sm">
+                                    </label>
+                                    <label for="seating_to">
+                                        to
+                                        <input type="text" name="seating_to" id="seating_to" class="form-control input-sm">
+                                    </label>
+                                </div>
                                 <div class="ftr">
                                     <button class="btn btn-xs btn-orange">Apply</button>
                                     <button class="btn btn-xs btn-default">Reset</button>
                                 </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
                 <!-- search result -->
@@ -406,7 +422,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        Loweer Rating
+                                        Lower Rating
                                     </a>
                                 </li>
                             </ul>
@@ -440,6 +456,72 @@
                         </span>
 
                     </div>
+
+                    <!-- compare -->
+                    <div class="search-compare">
+                        <div class="mCustomScrollbar_compare">
+
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
+                                </div>
+                                <div class="hertz">
+                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
+                                </div>
+                                <div class="title">
+                                    Economy Car - KIA
+                                </div>
+                                <div class="price">
+                                    <span>US 84</span> / Day
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
+                                </div>
+                                <div class="hertz">
+                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
+                                </div>
+                                <div class="title">
+                                    Economy Car - KIA
+                                </div>
+                                <div class="price">
+                                    <span>US 84</span> / Day
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
+                                </div>
+                                <div class="hertz">
+                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
+                                </div>
+                                <div class="title">
+                                    Economy Car - KIA
+                                </div>
+                                <div class="price">
+                                    <span>US 84</span> / Day
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
+                                </div>
+                                <div class="hertz">
+                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
+                                </div>
+                                <div class="title">
+                                    Economy Car - KIA
+                                </div>
+                                <div class="price">
+                                    <span>US 84</span> / Day
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ftr text-center">
+                            <button type="submit" class="btn btn-orange btn-sm">Start comparing</button>
+                        </div>
+                    </div>
                     <!-- result -->
                     <div class="results">
                         <div class="result-car">
@@ -455,16 +537,15 @@
                                     <div class="location">
                                         <div class="way">
                                             <div class="icon">
-                                                <div class="fui-location"></div>
+                                                <a class="a-location collapsed" data-toggle="collapse" data-parent="#accordion" href="#locations-9">
+                                                    <div class="fui-location"></div>
+                                                </a>
                                             </div>
                                             <div class="way-content">
                                                 <div><strong>Pick-Up:</strong> 25 Newark Airport Bldg 25, Newark, United ..</div>
                                                 <div><strong>Drop-Off:</strong> 25 Newark Airport Bldg 25, Newark, United ..</div>
                                             </div>
                                         </div>
-
-                                        <div id="locations"></div>
-
                                         <div class="rating">
                                             <img src="./style/images/hertz.png" width="60" height="20" alt="Hertz"/>
                                             <div class="recommendations">
@@ -520,6 +601,76 @@
 
                                 <div class="btn_container">
                                     <button class="btn btn-orange btn-sm">Select</button>
+                                </div>
+                            </div>
+                            <div id="locations-9" class="location-picker panel-collapse collapse">
+                                <div class="close" data-toggle="collapse" data-parent="#accordion" href="#locations-9">
+                                    <span class="glyphicon glyphicon-remove-sign"></span>
+                                    close
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="content mCustomScrollbar mCustomScrollBar-location">
+                                        <div class="section">
+                                            <div class="col-sm-6">
+                                                <div class="title chk-loc">Choose your Pick-up Location</div>
+                                                <label class="radio">
+                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                    25 Newark Airport Bldg 25, Newark, United States
+                                                </label>
+                                                <label class="radio">
+                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                    25 Newark Airport Bldg 25, Newark, United States
+                                                </label>
+                                                <label class="radio">
+                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                    25 Newark Airport Bldg 25, Newark, United States
+                                                </label>
+                                                <label class="radio">
+                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                    25 Newark Airport Bldg 25, Newark, United States
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-6 text-right map">
+                                                <img src="./style/images/map.jpg" alt="map" width="256" height="179"/>
+                                            </div>
+                                        </div>
+                                        <div class="section">
+                                            <div class="col-sm-12">
+                                                <a class="a-location collapsed" data-toggle="collapse" data-parent="#accordion" href="#mapTo-1">
+                                                    <label class="checkbox chk-loc" for="returnCar">
+                                                            <span class="icons">
+                                                                <span class="first-icon fui-checkbox-unchecked"></span>
+                                                                <span class="second-icon fui-checkbox-checked"></span>
+                                                            </span>
+                                                        <input type="checkbox" value="all" id="returnCar" data-toggle="checkbox">
+                                                        <span class="driver-aged">Return car to different location</span>
+                                                    </label>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="section panel-collapse collapse" id="mapTo-1">
+                                        <div class="col-sm-6">
+                                            <label class="radio">
+                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                25 Newark Airport Bldg 25, Newark, United States
+                                            </label>
+                                            <label class="radio">
+                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                25 Newark Airport Bldg 25, Newark, United States
+                                            </label>
+                                            <label class="radio">
+                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                25 Newark Airport Bldg 25, Newark, United States
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6 text-right map">
+                                            <img src="./style/images/map.jpg" alt="map" width="256" height="179"/>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-sm-12 text-right submit">
+                                        <button class="btn btn-orange">Proceed to Checkout</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -629,16 +780,21 @@
                                         </div>
                                     </div>
                                     <div class="section">
+                                        <div class="col-sm-12">
+                                            <a class="a-location collapsed" data-toggle="collapse" data-parent="#accordion" href="#mapTo-1">
+                                                <label class="checkbox chk-loc" for="returnCar">
+                                                        <span class="icons">
+                                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                                            <span class="second-icon fui-checkbox-checked"></span>
+                                                        </span>
+                                                    <input type="checkbox" value="all" id="returnCar" data-toggle="checkbox">
+                                                    <span class="driver-aged">Return car to different location</span>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="section location-picker panel-collapse collapse" id="mapTo-1">
                                         <div class="col-sm-6">
-                                            <label class="checkbox chk-loc" for="returnCar">
-                                                <span class="icons">
-                                                    <span class="first-icon fui-checkbox-unchecked"></span>
-                                                    <span class="second-icon fui-checkbox-checked"></span>
-                                                </span>
-                                                <input type="checkbox" value="all" id="returnCar" data-toggle="checkbox">
-                                                <span class="driver-aged">Return car to different location</span>
-                                            </label>
-
                                             <label class="radio">
                                                 <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
                                                 25 Newark Airport Bldg 25, Newark, United States
@@ -651,7 +807,6 @@
                                                 <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
                                                 25 Newark Airport Bldg 25, Newark, United States
                                             </label>
-
                                         </div>
                                         <div class="col-sm-6 text-right map">
                                             <img src="./style/images/map.jpg" alt="map" width="256" height="179"/>
@@ -1032,6 +1187,7 @@
         <script src="./style/js/jquery-1.8.3.min.js"></script>
         <script src="./style/js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="./style/js/jquery.ui.touch-punch.min.js"></script>
+        <script src="./style/js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="./style/js/bootstrap.min.js"></script>
         <script src="./style/js/bootstrap-select.js"></script>
         <script src="./style/js/bootstrap-switch.js"></script>
@@ -1045,5 +1201,35 @@
         <script src="./style/js/application.js"></script>
         <script src="./style/js/jquery.bxslider.min.js"></script>
         <script src="./style/js/home.js"></script>
+
+        <script>
+            (function($){
+                $(".mCustomScrollbar").mCustomScrollbar({
+                    theme: 'dark'
+                });
+
+                $(".mCustomScrollbar_compare").mCustomScrollbar({
+                    axis:"x",
+                    theme: 'dark',
+                    advanced:{
+                        autoExpandHorizontalScroll:true
+                    }
+                });
+
+                $(".fui-location, .a-location").on("click", function () {
+                    var parent = $(this).closest(".result-car");
+
+                    if (parent.find(".collapse").hasClass("in")) {
+                        parent.find(".ftr .btn").fadeIn();
+                    } else {
+                        parent.find(".ftr .btn").fadeOut();
+                    }
+                });
+
+                $(".close").on("click", function () {
+                   $(this).parent().closest(".result-car").find(".ftr .btn").fadeIn();
+                });
+            })(jQuery);
+        </script>
     </body>
 </html>

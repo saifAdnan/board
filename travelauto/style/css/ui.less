@@ -27,6 +27,7 @@
 
     & > div {
       padding: 22px 20px;
+      padding-top: 8px;
       position: relative;
       float: left;
 
@@ -35,6 +36,15 @@
         position: relative;
         width: 42%;
       }
+    }
+
+    & .caption {
+      color: #000;
+      font-weight: bold;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 0;
+      padding-top: 22px;
     }
 
     & .icon {
@@ -290,7 +300,7 @@
   float: left;
 
 
-  & .collapsed .glyphicon:before  {
+  & .a-location.collapsed .glyphicon:before  {
     content: "\e113";
   }
 
@@ -351,12 +361,16 @@
         line-height: 16px;
       }
 
-      & .icon {
+      & .icon a {
         color: #e9752f;
         font-size: 18px;
         position: relative;
         top: 6px;
         margin-right: 4px;
+
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
 
@@ -466,6 +480,12 @@
         color: #e9752f;
       }
     }
+
+
+  }
+  & .submit .btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
 
@@ -497,6 +517,11 @@
       text-align: center;
     }
 
+    & .submit {
+      float: left;
+      clear: both;
+    }
+
     & .location-picker {
       .submit .btn {
         margin-top: 20px;
@@ -510,11 +535,14 @@
         clear: both;
         float: left;
         margin-bottom: 20px;
+        margin-left: 0;
+
       }
 
       & .rating {
         margin-top: 20px;
       }
+
 
       & .left {
         & img {
@@ -525,6 +553,11 @@
 
       & .right {
         width: 100%;
+
+        & .price,
+        & .total{
+          text-align: left;
+        }
       }
       
 
@@ -534,7 +567,7 @@
       & .compare_container,
       & .btn_container {
         width: 100%;
-        text-align: center;
+        text-align: left;
       }
 
       & .btn_container {
@@ -586,6 +619,7 @@
         }
       }
     }
+
   }
   & a {
     background-color: #b4b3b3;
@@ -607,3 +641,92 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .pagination {
+    & a {
+      margin: 0!important;
+      width: 100%;
+      float: left;
+      clear: both;
+      text-align: center;
+    }
+
+    & ul {
+      width: 100%;
+    }
+  }
+}
+/* Compare search */
+.search-compare {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-bottom: 20px;
+
+  & .mCustomScrollbar_compare {
+    background-color: #f8f4e9;
+    height: 175px;
+  }
+
+  & .item {
+    width: 168px;
+    float: left;
+    position: relative;
+    min-height: 100px;
+    padding: 10px 16px;
+    padding-bottom: 0;
+    text-align: left;
+    color: #636363;
+    font-size: 12px;
+
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      background-color: #d3d3d3;
+      width: 1px;
+      top: 10px;
+      bottom: 10px;
+      right: 0;
+      content: " ";
+      display: block;
+      position: absolute;
+    }
+
+    & .img {
+      text-align: center;
+    }
+
+    & .title {
+      margin-top: 4px;
+    }
+
+    & .price {
+
+      font-weight: lighter;
+      & span {
+        color: #e87630;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* Scroll */
+.mCustomScrollbar {
+  max-height: 200px;
+  position: relative;
+
+  &.mCustomScrollBar-location {
+    max-height: 600px;
+  }
+}
+
+.mCustomScrollbar_compare {
+  max-width: 800px;
+  position: relative;
+}
+

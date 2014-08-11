@@ -25,6 +25,7 @@
 }
 .search-options .row > div {
   padding: 22px 20px;
+  padding-top: 8px;
   position: relative;
   float: left;
 }
@@ -32,6 +33,14 @@
   padding-left: 60px;
   position: relative;
   width: 42%;
+}
+.search-options .row .caption {
+  color: #000;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 22px;
 }
 .search-options .row .icon {
   position: absolute;
@@ -231,7 +240,7 @@
   margin-bottom: 20px;
   float: left;
 }
-.result-car .collapsed .glyphicon:before {
+.result-car .a-location.collapsed .glyphicon:before {
   content: "\e113";
 }
 .result-car .section {
@@ -281,12 +290,15 @@
   float: left;
   line-height: 16px;
 }
-.result-car .content .way .icon {
+.result-car .content .way .icon a {
   color: #e9752f;
   font-size: 18px;
   position: relative;
   top: 6px;
   margin-right: 4px;
+}
+.result-car .content .way .icon a:hover {
+  opacity: 0.7;
 }
 .result-car .content .title {
   font-size: 18px;
@@ -374,6 +386,10 @@
 .result-car .ftr .included .fui-check {
   color: #e9752f;
 }
+.result-car .submit .btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 .search-offer {
   background: url("../images/offer.png") no-repeat;
   height: 28px;
@@ -396,6 +412,10 @@
   .result-car .map {
     text-align: center;
   }
+  .result-car .submit {
+    float: left;
+    clear: both;
+  }
   .result-car .location-picker .submit .btn {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -405,6 +425,7 @@
     clear: both;
     float: left;
     margin-bottom: 20px;
+    margin-left: 0;
   }
   .result-car .body .rating {
     margin-top: 20px;
@@ -416,11 +437,15 @@
   .result-car .body .right {
     width: 100%;
   }
+  .result-car .body .right .price,
+  .result-car .body .right .total {
+    text-align: left;
+  }
   .result-car .ftr .included,
   .result-car .ftr .compare_container,
   .result-car .ftr .btn_container {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .result-car .ftr .btn_container {
     margin-top: 20px;
@@ -473,4 +498,76 @@
 }
 .pagination a.next {
   margin-left: 11px;
+}
+@media (max-width: 767px) {
+  .pagination a {
+    margin: 0!important;
+    width: 100%;
+    float: left;
+    clear: both;
+    text-align: center;
+  }
+  .pagination ul {
+    width: 100%;
+  }
+}
+/* Compare search */
+.search-compare {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-bottom: 20px;
+}
+.search-compare .mCustomScrollbar_compare {
+  background-color: #f8f4e9;
+  height: 175px;
+}
+.search-compare .item {
+  width: 168px;
+  float: left;
+  position: relative;
+  min-height: 100px;
+  padding: 10px 16px;
+  padding-bottom: 0;
+  text-align: left;
+  color: #636363;
+  font-size: 12px;
+}
+.search-compare .item:last-child:before {
+  display: none;
+}
+.search-compare .item:before {
+  background-color: #d3d3d3;
+  width: 1px;
+  top: 10px;
+  bottom: 10px;
+  right: 0;
+  content: " ";
+  display: block;
+  position: absolute;
+}
+.search-compare .item .img {
+  text-align: center;
+}
+.search-compare .item .title {
+  margin-top: 4px;
+}
+.search-compare .item .price {
+  font-weight: lighter;
+}
+.search-compare .item .price span {
+  color: #e87630;
+  font-weight: bold;
+}
+/* Scroll */
+.mCustomScrollbar {
+  max-height: 200px;
+  position: relative;
+}
+.mCustomScrollbar.mCustomScrollBar-location {
+  max-height: 600px;
+}
+.mCustomScrollbar_compare {
+  max-width: 800px;
+  position: relative;
 }
