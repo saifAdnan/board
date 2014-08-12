@@ -26,10 +26,18 @@
         <div id="header">
             <div class="container">
                 <div class="logo pull-left">
-                    <a href="#"><img src="./style/images/logo.jpg" alt="Travelauto" width="140" height="18" /></a>
+                    <a href="#">
+                        <img src="./style/images/logo.png" alt="Travelauto" width="141" height="31" />
+                    </a>
                 </div>
 
+
+
                 <ul class="top-links pull-right">
+                    <div class="help pull-left">
+                        <p>Need Help? Call Us +91 40 49 69 39 39</p>
+                        <p>Write to: bookings@travelauto.com</p>
+                    </div>
                     <li class="pull-left currency">
                         <select>
                             <option>US$</option>
@@ -46,6 +54,7 @@
                         </select>
                     </li>
 
+
                     <li class="pull-left">
                         <a href="#">My Account</a>
                     </li>
@@ -59,7 +68,7 @@
             <div class="search-options">
                 <div class="row">
                     <div class="caption">
-                        Car Renter
+                        Your Car Search Locations | Car with Driver - Airport Transfer
                     </div>
                     <div class="section">
                         <img class="icon" src="./style/images/car.png" alt="car" width="21" height="12"/>
@@ -72,14 +81,14 @@
                     </div>
                     <div class="splitter"></div>
                     <div class="section">
-                        <img class="icon" src="./style/images/car.png" alt="car" width="21" height="12"/>
+                        <!--<img class="icon" src="./style/images/car.png" alt="car" width="21" height="12"/>-->
                         <div>
                             <strong>Drop Off:</strong> Hartsfield-Jackson Atlanta Intl Airport...
                         </div>
                         <div>Thu, Jul. 17, 2014 - 12:00 PM</div>
                     </div>
                     <div class="btn_container">
-                        <a href="#" class="btn btn-xs btn-orange">Change</a>
+                        <a href="#" class="btn btn-sm btn-orange">Change</a>
                     </div>
                 </div>
             </div>
@@ -88,7 +97,7 @@
             <div class="row">
                 <!-- Search filter -->
                 <div class="col-sm-3 search-filter">
-                    <a class="a-advanced" href="#">
+                    <a class="a-link" href="#">
                         <span>Advanced search</span>
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
@@ -216,7 +225,18 @@
                         <div id="pricePerDay" class="body panel-collapse collapse">
                             <form action="#" method="GET">
                                 <div class="content mCustomScrollbar">
-                                    <h3>EMPTY</h3>
+                                    <label class="cost_from" for="cost_from">
+                                        from
+                                        <input type="text" name="cost_from" id="cost_from" class="form-control input-sm"/>
+                                    </label>
+                                    <label for="cost_to">
+                                        to
+                                        <input type="text" name="cost_from" id="cost_to" class="form-control input-sm"/>
+                                    </label>
+                                </div>
+                                <div class="ftr">
+                                    <button class="btn btn-xs btn-orange">Apply</button>
+                                    <button class="btn btn-xs btn-default">Reset</button>
                                 </div>
                             </form>
                         </div>
@@ -236,7 +256,18 @@
                         <div id="rentalAgency" class="body panel-collapse collapse ">
                             <form action="#" method="GET">
                                 <div class="content mCustomScrollbar">
-                                    <h3>EMPTY</h3>
+                                    <label class="cost_from" for="cost_from">
+                                        from
+                                        <input type="text" name="cost_from" id="cost_from" class="form-control input-sm"/>
+                                    </label>
+                                    <label for="cost_to">
+                                        to
+                                        <input type="text" name="cost_from" id="cost_to" class="form-control input-sm"/>
+                                    </label>
+                                </div>
+                                <div class="ftr">
+                                    <button class="btn btn-xs btn-orange">Apply</button>
+                                    <button class="btn btn-xs btn-default">Reset</button>
                                 </div>
                             </form>
                         </div>
@@ -460,63 +491,7 @@
                     <!-- compare -->
                     <div class="search-compare">
                         <div class="mCustomScrollbar_compare">
-
-                            <div class="item">
-                                <div class="img">
-                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
-                                </div>
-                                <div class="hertz">
-                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
-                                </div>
-                                <div class="title">
-                                    Economy Car - KIA
-                                </div>
-                                <div class="price">
-                                    <span>US 84</span> / Day
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
-                                </div>
-                                <div class="hertz">
-                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
-                                </div>
-                                <div class="title">
-                                    Economy Car - KIA
-                                </div>
-                                <div class="price">
-                                    <span>US 84</span> / Day
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
-                                </div>
-                                <div class="hertz">
-                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
-                                </div>
-                                <div class="title">
-                                    Economy Car - KIA
-                                </div>
-                                <div class="price">
-                                    <span>US 84</span> / Day
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img src="./style/images/car01.jpg" width="120" alt="Car"/>
-                                </div>
-                                <div class="hertz">
-                                    <img src="./style/images/hertz.png" width="64" height="24" alt="Hertz"/>
-                                </div>
-                                <div class="title">
-                                    Economy Car - KIA
-                                </div>
-                                <div class="price">
-                                    <span>US 84</span> / Day
-                                </div>
-                            </div>
+                            <!-- list -->
                         </div>
                         <div class="ftr text-center">
                             <button type="submit" class="btn btn-orange btn-sm">Start comparing</button>
@@ -553,7 +528,7 @@
                                                     <div class="stars-4"></div>
                                                 </div>
                                             </div>
-                                            <div class="reviews">
+                                            <div class="reviews" data-toggle="modal" data-target="#Reviews">
                                                 23 Reviews
                                             </div>
                                         </div>
@@ -561,11 +536,11 @@
                                 </div>
                                 <div class="right">
                                 <div class="price">
-                                    <strong>$2097</strong> / day
+                                    <strong>$2097</strong> / DAY
                                 </div>
                                 <div class="total">
-                                    <div>043567</div>
-                                    <div>Total Trip Cost</div>
+                                    <div>$43567</div>
+                                    <div class="text">Total Trip Cost</div>
                                 </div>
                             </div>
                             </div>
@@ -604,52 +579,18 @@
                                 </div>
                             </div>
                             <div id="locations-9" class="location-picker panel-collapse collapse">
-                                <div class="close" data-toggle="collapse" data-parent="#accordion" href="#locations-9">
+                                <a class="close" data-toggle="collapse" data-parent="#accordion" href="#locations-9">
                                     <span class="glyphicon glyphicon-remove-sign"></span>
                                     close
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="content mCustomScrollbar mCustomScrollBar-location">
-                                        <div class="section">
-                                            <div class="col-sm-6">
-                                                <div class="title chk-loc">Choose your Pick-up Location</div>
-                                                <label class="radio">
-                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                                    25 Newark Airport Bldg 25, Newark, United States
-                                                </label>
-                                                <label class="radio">
-                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                                    25 Newark Airport Bldg 25, Newark, United States
-                                                </label>
-                                                <label class="radio">
-                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                                    25 Newark Airport Bldg 25, Newark, United States
-                                                </label>
-                                                <label class="radio">
-                                                    <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                                    25 Newark Airport Bldg 25, Newark, United States
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-6 text-right map">
-                                                <img src="./style/images/map.jpg" alt="map" width="256" height="179"/>
-                                            </div>
-                                        </div>
-                                        <div class="section">
-                                            <div class="col-sm-12">
-                                                <a class="a-location collapsed" data-toggle="collapse" data-parent="#accordion" href="#mapTo-1">
-                                                    <label class="checkbox chk-loc" for="returnCar">
-                                                            <span class="icons">
-                                                                <span class="first-icon fui-checkbox-unchecked"></span>
-                                                                <span class="second-icon fui-checkbox-checked"></span>
-                                                            </span>
-                                                        <input type="checkbox" value="all" id="returnCar" data-toggle="checkbox">
-                                                        <span class="driver-aged">Return car to different location</span>
-                                                    </label>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="section panel-collapse collapse" id="mapTo-1">
+                                </a>
+                                <div class="content mCustomScrollbar mCustomScrollBar-location">
+                                    <div class="section">
                                         <div class="col-sm-6">
+                                            <div class="title chk-loc">Choose your Pick-up Location</div>
+                                            <label class="radio">
+                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                                25 Newark Airport Bldg 25, Newark, United States
+                                            </label>
                                             <label class="radio">
                                                 <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
                                                 25 Newark Airport Bldg 25, Newark, United States
@@ -667,10 +608,42 @@
                                             <img src="./style/images/map.jpg" alt="map" width="256" height="179"/>
                                         </div>
                                     </div>
+                                    <div class="section">
+                                        <div class="col-sm-12">
+                                            <a class="a-location collapsed" data-toggle="collapse" data-parent="#accordion" href="#mapTo-1">
+                                                <label class="checkbox chk-loc" for="returnCar">
+                                                        <span class="icons">
+                                                            <span class="first-icon fui-checkbox-unchecked"></span>
+                                                            <span class="second-icon fui-checkbox-checked"></span>
+                                                        </span>
+                                                    <input type="checkbox" value="all" id="returnCar" data-toggle="checkbox">
+                                                    <span class="driver-aged">Return car to different location</span>
+                                                </label>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-12 text-right submit">
-                                        <button class="btn btn-orange">Proceed to Checkout</button>
+                                    <div class="section panel-collapse collapse" id="mapTo-1">
+                                    <div class="col-sm-6">
+                                        <label class="radio">
+                                            <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                            25 Newark Airport Bldg 25, Newark, United States
+                                        </label>
+                                        <label class="radio">
+                                            <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                            25 Newark Airport Bldg 25, Newark, United States
+                                        </label>
+                                        <label class="radio">
+                                            <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                            25 Newark Airport Bldg 25, Newark, United States
+                                        </label>
                                     </div>
+                                    <div class="col-sm-6 text-right map">
+                                        <img src="./style/images/map.jpg" alt="map" width="256" height="179"/>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-sm-12 text-right submit">
+                                    <button class="btn btn-orange">Proceed to Checkout</button>
                                 </div>
                             </div>
                         </div>
@@ -706,11 +679,11 @@
                                 </div>
                                 <div class="right">
                                 <div class="price">
-                                    <strong>$2097</strong> / day
+                                    <strong>$1097</strong> / DAY
                                 </div>
                                 <div class="total">
-                                    <div>043567</div>
-                                    <div>Total Trip Cost</div>
+                                    <div>$43567</div>
+                                    <div class="text">Total Trip Cost</div>
                                 </div>
                             </div>
                             </div>
@@ -743,9 +716,8 @@
                                         2 Bags
                                     </span>
                                 </div>
-
                                 <div class="btn_container">
-                                    <button class="btn btn-orange">Select</button>
+                                    <button class="btn btn-orange btn-sm">Select</button>
                                 </div>
                             </div>
                             <div id="locations-10" class="location-picker panel-collapse collapse">
@@ -850,11 +822,11 @@
                                 </div>
                                 <div class="right">
                                 <div class="price">
-                                    <strong>$2097</strong> / day
+                                    <strong>$3197</strong> / DAY
                                 </div>
                                 <div class="total">
-                                    <div>043567</div>
-                                    <div>Total Trip Cost</div>
+                                    <div>$43567</div>
+                                    <div class="text">Total Trip Cost</div>
                                 </div>
                             </div>
                             </div>
@@ -889,7 +861,7 @@
                                 </div>
 
                                 <div class="btn_container">
-                                    <button class="btn btn-orange">Select</button>
+                                    <button class="btn btn-orange btn-sm">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -925,11 +897,11 @@
                                 </div>
                                 <div class="right">
                                 <div class="price">
-                                    <strong>$2097</strong> / day
+                                    <strong>$2097</strong> / DAY
                                 </div>
                                 <div class="total">
-                                    <div>043567</div>
-                                    <div>Total Trip Cost</div>
+                                    <div>$43567</div>
+                                    <div class="text">Total Trip Cost</div>
                                 </div>
                             </div>
                             </div>
@@ -964,7 +936,7 @@
                                 </div>
 
                                 <div class="btn_container">
-                                    <button class="btn btn-orange">Select</button>
+                                    <button class="btn btn-orange btn-sm">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -1000,11 +972,11 @@
                                 </div>
                                 <div class="right">
                                 <div class="price">
-                                    <strong>$2097</strong> / day
+                                    <strong>$2097</strong> / DAY
                                 </div>
                                 <div class="total">
-                                    <div>043567</div>
-                                    <div>Total Trip Cost</div>
+                                    <div>$43567</div>
+                                    <div class="text">Total Trip Cost</div>
                                 </div>
                             </div>
                             </div>
@@ -1039,7 +1011,7 @@
                                 </div>
 
                                 <div class="btn_container">
-                                    <button class="btn btn-orange">Select</button>
+                                    <button class="btn btn-orange btn-sm">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -1077,6 +1049,164 @@
             </div>
         </div>
 
+        <!-- Review -->
+        <div class="modal modal-reviews fade" id="Reviews" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="close">
+                            <div class="close">
+                                <span class="glyphicon glyphicon-remove-sign"></span>
+                                close
+                            </div>
+                        </div>
+                        <div class="hdr">
+                            <img class="img-container pull-left" src="./style/images/budget.jpg" width="125" height="62" alt=""/>
+                            <div class="pull-left">
+                                <span class="title">
+                                    Budget Car Rental And Van Rental
+                                </span>
+                                <div class="info">
+                                    <div class="recommendations pull-left">
+                                        <div class="stars">
+                                            <div class="stars-4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews pull-left">
+                                        23 Reviews
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form row">
+                                <div class="col-sm-6">
+                                    <select name="country" id="country" placeholder="Choose country">
+                                        <option value="0">Choose Country</option>
+                                        <option value="0">UAE</option>
+                                        <option value="1">Qatar</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select name="city" id="city" placeholder="Choose city">
+                                        <option value="0">Choose City</option>
+                                        <option value="0">Dubai</option>
+                                        <option value="1">Shareqa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="clearfix"></div>
+                            <div class="reviews-list mCustomScrollbar mCustomScrollbar-reviews">
+                                <div class="item">
+                                    <table class="table table-responsive">
+                                        <tr>
+                                            <td class="avatar">
+                                                <img src="./style/images/avatar.jpg" alt="Avatar" width="100" height="100"/>
+                                            </td>
+                                            <td>
+                                                <div class="hdr">
+                                                    <div class="pull-left">
+                                                        <div class="title">
+                                                            Car Rental
+                                                        </div>
+                                                        <div class="description">
+                                                            Mike Adam | Date: Apr 30, 2014, Abu Dhabi
+                                                        </div>
+                                                    </div>
+                                                    <div class="recommendations pull-right">
+                                                        <div class="stars">
+                                                            <div class="stars-4"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias
+                                                        commodi ea enim eveniet ex hic ipsum maxime minima mollitia, non,
+                                                        obcaecati optio... <a href="">Read more</a></p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <hr/>
+
+                                <div class="item">
+                                    <table class="table table-responsive">
+                                        <tr>
+                                            <td class="avatar">
+                                                <img src="./style/images/avatar.jpg" alt="Avatar" width="100" height="100"/>
+                                            </td>
+                                            <td>
+                                                <div class="hdr">
+                                                    <div class="pull-left">
+                                                        <div class="title">
+                                                            Car Rental
+                                                        </div>
+                                                        <div class="description">
+                                                            Mike Adam | Date: Apr 30, 2014, Abu Dhabi
+                                                        </div>
+                                                    </div>
+                                                    <div class="recommendations pull-right">
+                                                        <div class="stars">
+                                                            <div class="stars-4"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias
+                                                        commodi ea enim eveniet ex hic ipsum maxime minima mollitia, non,
+                                                        obcaecati optio... <a href="">Read more</a></p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <hr/>
+
+                                <div class="item">
+                                    <table class="table table-responsive">
+                                        <tr>
+                                            <td class="avatar">
+                                                <img src="./style/images/avatar.jpg" alt="Avatar" width="100" height="100"/>
+                                            </td>
+                                            <td>
+                                                <div class="hdr">
+                                                    <div class="pull-left">
+                                                        <div class="title">
+                                                            Car Rental
+                                                        </div>
+                                                        <div class="description">
+                                                            Mike Adam | Date: Apr 30, 2014, Abu Dhabi
+                                                        </div>
+                                                    </div>
+                                                    <div class="recommendations pull-right">
+                                                        <div class="stars">
+                                                            <div class="stars-4"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias
+                                                        commodi ea enim eveniet ex hic ipsum maxime minima mollitia, non,
+                                                        obcaecati optio... <a href="">Read more</a></p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Subscribe now -->
         <div class="mailing-list">
             <div class="container">
@@ -1104,7 +1234,7 @@
                 <div class="row">
                     <div class="col-xs-7 col-md-3">
                         <div class="logo">
-                            <img src="./style/images/footer-logo.png" alt="">
+                            <img src="./style/images/logo.png" alt="Travelauto" width="141" height="31">
                         </div>
 
                         <div class="follow-phrase">
@@ -1201,35 +1331,6 @@
         <script src="./style/js/application.js"></script>
         <script src="./style/js/jquery.bxslider.min.js"></script>
         <script src="./style/js/home.js"></script>
-
-        <script>
-            (function($){
-                $(".mCustomScrollbar").mCustomScrollbar({
-                    theme: 'dark'
-                });
-
-                $(".mCustomScrollbar_compare").mCustomScrollbar({
-                    axis:"x",
-                    theme: 'dark',
-                    advanced:{
-                        autoExpandHorizontalScroll:true
-                    }
-                });
-
-                $(".fui-location, .a-location").on("click", function () {
-                    var parent = $(this).closest(".result-car");
-
-                    if (parent.find(".collapse").hasClass("in")) {
-                        parent.find(".ftr .btn").fadeIn();
-                    } else {
-                        parent.find(".ftr .btn").fadeOut();
-                    }
-                });
-
-                $(".close").on("click", function () {
-                   $(this).parent().closest(".result-car").find(".ftr .btn").fadeIn();
-                });
-            })(jQuery);
-        </script>
+        <script src="./style/js/main.js"></script>
     </body>
 </html>
