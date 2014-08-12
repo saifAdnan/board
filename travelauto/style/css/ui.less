@@ -32,9 +32,13 @@
   font-family: Lato, sans-serif;
 }
 
+.search-main {
+  margin-top: 44px;
+}
+
 /* Search options */
 .search-options {
-  margin-bottom: 44px;
+
   background-color: #f9f8f6;
   padding: 0 10px;
   & .row {
@@ -133,7 +137,7 @@
 }
 
 .a-link {
-  font-size: 20px;
+  font-size: 16px;
   color: #e9752f;
   font-weight: bold;
   font-family: Lato, sans-serif;
@@ -148,6 +152,15 @@
     color: #e9752f;
   }
 }
+
+.subscribe-col {
+  & .btn {
+    &:hover {
+      background-color: #e9752f;
+    }
+  }
+}
+
 
 /* Search filter */
 .search-filter {
@@ -888,14 +901,33 @@
 }
 
 /* Compare page */
+.compare-back {
+  margin: 20px 0;
+}
 .compare-wall {
   background-color: #efeeed;
-  padding: 20px;
+  padding: 40px 20px;
   float: left;
   width: 100%;
+  position: relative;
+  min-width: 900px;
+
   .labels {
     float: left;
     width: 206px;
+
+
+  &:before {
+    border-right: 1px solid #d3d3d3;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 40px;
+    bottom: 40px;
+    z-index: 2;
+  }
+
 
     & .label {
       float: left;
@@ -904,11 +936,61 @@
       font-size: 14px;
       color: #2c3e50;
       text-align: left;
-      margin-bottom: 36px;
+      height: 50px;
 
       &.type {
-        margin-bottom: 90px;
+        height: 130px;
+        position: relative;
+        top: 20px;
       }
+    }
+  }
+
+  & .list {
+
+    & .item {
+      float: left;
+      width: 160px;
+      line-height: 14px;
+      border-right: 1px solid #d3d3d3;
+      font-size: 13px;
+      
+      & .btn {
+        background-color: #afafae;
+
+        &:hover {
+          background-color: #e9752f;
+        }
+      }
+
+      &:last-child {
+        border-right: 0 none;
+      }
+
+      & .img {
+        margin-left: -20px;
+
+        & .title {
+          margin-left: 20px;
+        }
+      }
+
+      & .brand {
+        text-align: center;
+      }
+
+
+      & > div {
+        height: 50px;
+        padding: 0 30px;
+        &:first-child {
+          height: 130px;
+        }
+      }
+    }
+
+    & .recommendations {
+      margin: 0;
     }
   }
 }
@@ -923,6 +1005,16 @@
   }
   &.mCustomScrollbar-reviews {
     max-height: 300px;
+  }
+
+}
+
+.mCustomScrollbar-compare_page {
+  max-width: 900px;
+  position: relative;
+  &.mCustomScrollbar {
+    max-height: 100000px;
+    margin-bottom: -30px;
   }
 }
 

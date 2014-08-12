@@ -18,6 +18,13 @@
             autoExpandHorizontalScroll:true
         }
     });
+    $(".mCustomScrollbar-compare_page").mCustomScrollbar({
+        axis:"x",
+        theme: 'dark',
+        advanced:{
+            autoExpandHorizontalScroll:true
+        }
+    });
     // Open location
     $(".fui-location, .a-location").on("click", function () {
         var parent = $(this).closest(".result-car");
