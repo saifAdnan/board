@@ -253,6 +253,9 @@
 
     & strong {
       font-weight: bold;
+      &:hover {
+        color: #e9752f;
+      }
     }
 
     &.collapsed .glyphicon:before  {
@@ -266,7 +269,7 @@
 
   & .sortBy {
     position: absolute;
-    background-color: #e9752f;
+    background-color: #f9f8f6;
     right: 0;
     left: 40px;
     top: 27px;
@@ -277,10 +280,9 @@
       height: 28px;
 
       & a {
-        color: #fff;
-
+        color: #949393;
         &:hover {
-          color: #000;
+          color: #e9752f;
         }
       }
     }
@@ -465,6 +467,16 @@
         font-weight: lighter;
         margin-bottom: 20px;
         text-align: center;
+        position: relative;
+
+        & strike {
+          position: absolute;
+          top: -16px;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
         & strong {
           font-size: 24px;
           font-weight: bold;

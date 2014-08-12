@@ -200,6 +200,9 @@
 .search-result .a-sort strong {
   font-weight: bold;
 }
+.search-result .a-sort strong:hover {
+  color: #e9752f;
+}
 .search-result .a-sort.collapsed .glyphicon:before {
   content: "\e113";
 }
@@ -208,7 +211,7 @@
 }
 .search-result .sortBy {
   position: absolute;
-  background-color: #e9752f;
+  background-color: #f9f8f6;
   right: 0;
   left: 40px;
   top: 27px;
@@ -219,10 +222,10 @@
   height: 28px;
 }
 .search-result .sortBy li a {
-  color: #fff;
+  color: #949393;
 }
 .search-result .sortBy li a:hover {
-  color: #000;
+  color: #e9752f;
 }
 .search-result hr {
   float: left;
@@ -375,6 +378,14 @@
   font-size: 14px;
   font-weight: lighter;
   margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+.result-car .body .right .price strike {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
   text-align: center;
 }
 .result-car .body .right .price strong {
