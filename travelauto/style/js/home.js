@@ -22,7 +22,6 @@
     
 $(document).ready(function() {
       $("select").selectpicker({style: 'btn btn-white', menuStyle: 'dropdown-inverse'});
-      
       /* Homepage Agencies Slider */
       if ($('.agencies-slider ul').length > 0) {
         var agenciesSlider = $('.agencies-slider ul').bxSlider({
@@ -142,45 +141,48 @@ $(document).ready(function() {
       
       /* Homepage Reviews Fading Slider */
       function nextReview() {
-        review = reviews.shift();
-        reviews.push(review);
-        $('.recommendations .agency img').fadeOut('medium', function() {
-          $(this).attr('src', review.logo).fadeIn('medium');
-        });
-        
-        $('.recommendations .agency .city').fadeOut('medium', function() {
-          $(this).text(review.city).fadeIn('medium');
-        });
-        
-        $('.recommendations .review').fadeOut('medium', function() {
-          $(this).text(review.review).fadeIn('medium');
-        });
-        
-        $('.recommendations .reviewer').fadeOut('medium', function() {
-          $(this).text(review.reviewer).fadeIn('medium');
-        });
-        
-        $('.recommendations .rating .stars > div').removeClass('stars-1').removeClass('stars-2').removeClass('stars-3').removeClass('stars-4').removeClass('stars-5');
-        $('.recommendations .rating .stars > div').addClass('stars-'+ review.stars);
-        
-        setTimeout(function() {
-          nextReview();
-        }, 5000);
+          if (typeof reviews === 'undefined') return false;
+          review = reviews.shift();
+          reviews.push(review);
+          $('.recommendations .agency img').fadeOut('medium', function () {
+              $(this).attr('src', review.logo).fadeIn('medium');
+          });
+
+          $('.recommendations .agency .city').fadeOut('medium', function () {
+              $(this).text(review.city).fadeIn('medium');
+          });
+
+          $('.recommendations .review').fadeOut('medium', function () {
+              $(this).text(review.review).fadeIn('medium');
+          });
+
+          $('.recommendations .reviewer').fadeOut('medium', function () {
+              $(this).text(review.reviewer).fadeIn('medium');
+          });
+
+          $('.recommendations .rating .stars > div').removeClass('stars-1').removeClass('stars-2').removeClass('stars-3').removeClass('stars-4').removeClass('stars-5');
+          $('.recommendations .rating .stars > div').addClass('stars-' + review.stars);
+
+          setTimeout(function () {
+              nextReview();
+          }, 5000);
       }
       
       function firstReview() {
-        review = reviews.shift();
-        reviews.push(review);
-        $('.recommendations .agency img').attr('src', review.logo);
-        $('.recommendations .agency .city').text(review.city);
-        $('.recommendations .review').text(review.review);
-        $('.recommendations .reviewer').text(review.reviewer);
-        $('.recommendations .rating .stars > div').removeClass('stars-1').removeClass('stars-2').removeClass('stars-3').removeClass('stars-4').removeClass('stars-5');
-        $('.recommendations .rating .stars > div').addClass('stars-'+ review.stars);
-        
-        setTimeout(function() {
-          nextReview();
-        }, 5000);
+          if (typeof reviews === 'undefined') return false;
+          review = reviews.shift();
+          reviews.push(review);
+
+          $('.recommendations .agency img').attr('src', review.logo);
+          $('.recommendations .agency .city').text(review.city);
+          $('.recommendations .review').text(review.review);
+          $('.recommendations .reviewer').text(review.reviewer);
+          $('.recommendations .rating .stars > div').removeClass('stars-1').removeClass('stars-2').removeClass('stars-3').removeClass('stars-4').removeClass('stars-5');
+          $('.recommendations .rating .stars > div').addClass('stars-' + review.stars);
+
+          setTimeout(function() {
+              nextReview();
+          }, 5000);
       }
       
       firstReview();
