@@ -490,7 +490,7 @@
 
                     <!-- compare -->
                     <div class="search-compare">
-                        <div class="mCustomScrollbar_compare">
+                        <div class="lists">
                             <!-- list -->
                         </div>
                         <div class="ftr text-center">
@@ -517,8 +517,8 @@
                                                 </a>
                                             </div>
                                             <div class="way-content">
-                                                <div><strong>Pick-Up:</strong> 25 Newark Airport Bldg 25, Newark, United ..</div>
-                                                <div><strong>Drop-Off:</strong> 25 Newark Airport Bldg 25, Newark, United ..</div>
+                                                <div class="way-content-from"><strong>Pick-Up:</strong> 25 Newark Airport Bldg 25, Newark, United ..</div>
+                                                <div class="way-content-to"><strong>Drop-Off:</strong> 25 Newark Airport Bldg 25, Newark, United ..</div>
                                             </div>
                                         </div>
                                         <div class="rating">
@@ -584,24 +584,40 @@
                                     close
                                 </a>
                                 <div class="content mCustomScrollbar mCustomScrollBar-location">
-                                    <div class="section">
+                                    <div class="section select-from">
                                         <div class="col-sm-6">
                                             <div class="title chk-loc">Choose your Pick-up Location</div>
-                                            <label class="radio">
-                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                            <label class="radio" for="pickFrom1">
+                                                <span class="icons">
+                                                    <span class="first-icon fui-radio-unchecked"></span>
+                                                    <span class="second-icon fui-radio-checked"></span>
+                                                </span>
+                                                <input type="radio" id="pickFrom1" data-toggle="radio" value="23 Newark Airport Bldg 25, Newark, United States" name="pickFrom[]">
+                                                23 Newark Airport Bldg 25, Newark, United States
+                                            </label>
+                                            <label class="radio" for="pickFrom2">
+                                                <span class="icons">
+                                                    <span class="first-icon fui-radio-unchecked"></span>
+                                                    <span class="second-icon fui-radio-checked"></span>
+                                                </span>
+                                                <input type="radio" id="pickFrom2" data-toggle="radio" value="24 Newark Airport Bldg 25, Newark, United States" name="pickFrom[]">
+                                                24 Newark Airport Bldg 25, Newark, United States
+                                            </label>
+                                            <label class="radio" for="pickFrom3">
+                                                <span class="icons">
+                                                    <span class="first-icon fui-radio-unchecked"></span>
+                                                    <span class="second-icon fui-radio-checked"></span>
+                                                </span>
+                                                <input type="radio" id="pickFrom3" data-toggle="radio" value="25 Newark Airport Bldg 25, Newark, United States" name="pickFrom[]">
                                                 25 Newark Airport Bldg 25, Newark, United States
                                             </label>
-                                            <label class="radio">
-                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                                25 Newark Airport Bldg 25, Newark, United States
-                                            </label>
-                                            <label class="radio">
-                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                                25 Newark Airport Bldg 25, Newark, United States
-                                            </label>
-                                            <label class="radio">
-                                                <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                                25 Newark Airport Bldg 25, Newark, United States
+                                            <label class="radio" for="pickFrom4">
+                                                <span class="icons">
+                                                    <span class="first-icon fui-radio-unchecked"></span>
+                                                    <span class="second-icon fui-radio-checked"></span>
+                                                </span>
+                                                <input type="radio" id="pickFrom4" data-toggle="radio" value="26 Newark Airport Bldg 25, Newark, United States" name="pickFrom[]">
+                                                26 Newark Airport Bldg 25, Newark, United States
                                             </label>
                                         </div>
                                         <div class="col-sm-6 text-right map">
@@ -622,19 +638,31 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="section panel-collapse collapse" id="mapTo-1">
+                                    <div class="section panel-collapse collapse select-to" id="mapTo-1">
                                     <div class="col-sm-6">
                                         <label class="radio">
-                                            <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
+                                            <span class="icons">
+                                                <span class="first-icon fui-radio-unchecked"></span>
+                                                <span class="second-icon fui-radio-checked"></span>
+                                            </span>
+                                            <input type="radio" data-toggle="radio" value="25 Newark Airport Bldg 25, Newark, United States" name="DropOff1[]">
                                             25 Newark Airport Bldg 25, Newark, United States
                                         </label>
                                         <label class="radio">
-                                            <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                            25 Newark Airport Bldg 25, Newark, United States
+                                            <span class="icons">
+                                                <span class="first-icon fui-radio-unchecked"></span>
+                                                <span class="second-icon fui-radio-checked"></span>
+                                            </span>
+                                            <input type="radio" data-toggle="radio" value="31 Newark Airport Bldg 25, Newark, United States" name="DropOff1[]">
+                                            31 Newark Airport Bldg 25, Newark, United States
                                         </label>
                                         <label class="radio">
-                                            <span class="icons"><span class="first-icon fui-radio-unchecked"></span><span class="second-icon fui-radio-checked"></span></span><input type="radio" data-toggle="radio" value="option1" id="optionsRadios1" name="optionsRadios">
-                                            25 Newark Airport Bldg 25, Newark, United States
+                                            <span class="icons">
+                                                <span class="first-icon fui-radio-unchecked"></span>
+                                                <span class="second-icon fui-radio-checked"></span>
+                                            </span>
+                                            <input type="radio" data-toggle="radio" value="32 Newark Airport Bldg 25, Newark, United States" name="DropOff1[]">
+                                            32 Newark Airport Bldg 25, Newark, United States
                                         </label>
                                     </div>
                                     <div class="col-sm-6 text-right map">
@@ -1029,7 +1057,7 @@
                                 <a href="#">1</a>
                             </li>
                             <li>
-                                <a href="#">2</a>
+                                <a class="current" href="#">2</a>
                             </li>
                             <li>
                                 <a href="#">3</a>
@@ -1606,7 +1634,7 @@
                         </div>
 
                         <div class="col-xs-12 col-md-3 subscribe-col">
-                            <button class="btn btn-red">Subscribe Now</button>
+                            <button class="btn btn-orange">Subscribe Now</button>
                         </div>
                     </div>
                 </form>

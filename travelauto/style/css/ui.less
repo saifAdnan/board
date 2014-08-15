@@ -106,6 +106,10 @@
 }
 
 @media (max-width: 767px) {
+
+  .help {
+    display: none;
+  }
   .search-options {
     & .row {
       padding-bottom: 20px;
@@ -141,6 +145,7 @@
   color: #e9752f;
   font-weight: bold;
   font-family: Lato, sans-serif;
+  cursor: pointer;
 
   & .glyphicon {
     font-size: 14px;
@@ -148,19 +153,15 @@
   }
 
   &:hover {
+    cursor: pointer;
     opacity: 0.7;
     color: #e9752f;
   }
 }
 
-.subscribe-col {
-  & .btn {
-    &:hover {
-      background-color: #e9752f;
-    }
-  }
+.modal-backdrop {
+  background: rgba(255,255,255,0.7);
 }
-
 
 /* Search filter */
 .search-filter {
@@ -228,7 +229,8 @@
 
 @media (max-width: 767px) {
   .search-filter {
-      & .search-filter-section {
+      & > .search-filter-section {
+        display: none;
         & .body {
 
           & label {
@@ -278,6 +280,7 @@
 
   & .sortBy_container {
     position: relative;
+    z-index: 99999;
   }
 
   & .sortBy {
@@ -592,6 +595,26 @@
   }
 }
 
+@media (max-width: 420px) {
+  .fui-location {
+    position: relative;
+    top: -12px;
+  }
+  .result-car {
+    & .included {
+      & > span {
+        float: left;
+        display: inline-block;
+        width: 100%;
+        margin: 0!important;
+
+        & > span {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 767px) {
   & .result-car {
     width: 100%;
@@ -638,9 +661,18 @@
       & .right {
         width: 100%;
 
+        & .price {
+          & strike {
+            text-align: left!important;
+          }
+        }
+
+
         & .price,
-        & .total{
+        & .total {
           text-align: left;
+          position: relative;
+          top: 8px;
         }
       }
       
@@ -701,6 +733,10 @@
         line-height: 14px;
         border-radius: 0;
 
+        &.current {
+          background-color: #e9752f;
+        }
+
         &:hover {
           background-color: #e9752f;
         }
@@ -753,9 +789,10 @@
   margin-bottom: 40px;
   display: none;
 
-  & .mCustomScrollbar_compare {
+  & .lists {
     background-color: #f8f4e9;
-    height: 175px;
+    float: left;
+    min-width: 100%;
   }
 
   & .item {
@@ -767,6 +804,17 @@
     text-align: left;
     color: #636363;
     font-size: 12px;
+
+    & .delete {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
 
     &:last-child {
       &:before {
@@ -803,8 +851,24 @@
       }
     }
   }
+  & .ftr {
+    & .btn {
+      margin-top: 5px;
+    }
+  }
 }
-
+.compare-clone {
+  &:before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: ' ';
+    z-index: -1;
+  }
+}
 .modal-reviews {
   color: #636363;
 
@@ -829,7 +893,7 @@
     }
 
     & .title {
-      font-size: 14px;
+      font-size: 18px;
       font-weight: bold;
     }
 
@@ -902,6 +966,109 @@
 .compare-back {
   margin: 20px 0;
 }
+
+.compare-sticky {
+  position: fixed;
+  background-color: #efeeed;
+  padding: 40px 20px;
+  width: 910px;
+  left: 50%;
+  margin-left: -455px;
+  top: 0;
+  z-index: 999;
+  display: none;
+  padding-bottom: 0;
+  height: 310px;
+
+  .labels {
+    float: left;
+    width: 206px;
+
+
+    &:before {
+      border-right: 1px solid #d3d3d3;
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 230px;
+      top: 40px;
+      bottom: 0;
+      z-index: 2;
+    }
+
+
+    & .label {
+      float: left;
+      width: 100%;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      text-align: left;
+      height: 50px;
+
+      &.type {
+        height: 130px;
+        position: relative;
+        top: 20px;
+      }
+
+      &.select {
+        width: 100%;
+        overflow: hidden;
+        text-indent: -999px;
+      }
+    }
+  }
+
+  & .list {
+    position: relative;
+
+    & .item {
+      float: left;
+      width: 164px;
+      line-height: 14px;
+      border-right: 1px solid #d3d3d3;
+      font-size: 13px;
+
+      & .btn {
+        background-color: #afafae;
+
+        &:hover {
+          background-color: #e9752f;
+        }
+      }
+
+      &:last-child {
+        border-right: 0 none;
+      }
+
+      & .img {
+        margin-left: -20px;
+
+        & .title {
+          margin-left: 20px;
+        }
+      }
+
+      & .brand {
+        text-align: center;
+      }
+
+
+      & > div {
+        height: 50px;
+        padding: 0 30px;
+        &:first-child {
+          height: 130px;
+        }
+      }
+    }
+
+    & .recommendations {
+      margin: 0;
+    }
+  }
+}
 .compare-wall {
   background-color: #efeeed;
   padding: 40px 20px;
@@ -909,6 +1076,7 @@
   width: 100%;
   position: relative;
   min-width: 900px;
+
 
   .labels {
     float: left;
@@ -941,14 +1109,21 @@
         position: relative;
         top: 20px;
       }
+
+      &.select {
+        width: 100%;
+        overflow: hidden;
+        text-indent: -999px;
+      }
     }
   }
 
   & .list {
+    position: relative;
 
     & .item {
       float: left;
-      width: 160px;
+      width: 164px;
       line-height: 14px;
       border-right: 1px solid #d3d3d3;
       font-size: 13px;
@@ -1071,6 +1246,10 @@
 
 }
 
+/* subscribe */
+.subscribe-col .btn {
+  width: 100%;
+}
 /* Scroll */
 .mCustomScrollbar {
   max-height: 200px;
@@ -1083,15 +1262,6 @@
     max-height: 300px;
   }
 
-}
-
-.mCustomScrollbar-compare_page {
-  max-width: 900px;
-  position: relative;
-  &.mCustomScrollbar {
-    max-height: 100000px;
-    margin-bottom: -30px;
-  }
 }
 
 .mCustomScrollbar_compare {
