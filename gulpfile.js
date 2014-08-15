@@ -3,7 +3,7 @@
  * @type {function(): config|exports}
  */
 var gulp = require('gulp');
-var nodemon = require('gulp-nodemon');
+
 var uglify = require('gulp-uglifyjs');
 var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
@@ -14,9 +14,9 @@ var uglifyConfig = {
     files: {
         ng: [
             'public/js/app.js',
-            'public/js/controllers/*.*',
-            'public/js/services/*.*',
-            'public/js/directives/*.*'
+            'public/js/controllers/*.js',
+            'public/js/services/*.js',
+            'public/js/directives/*.js'
         ],
         lib: [
             'public/lib/*.*'
@@ -33,6 +33,7 @@ gulp.task('uglify', function() {
             outSourceMap: false
         }))
         .pipe(gulp.dest('public/dist/'));
+
     gulp.src(uglifyConfig.files.lib)
         .pipe(uglify('lib.js', {
             outSourceMap: false
@@ -46,7 +47,6 @@ gulp.task('minify', function() {
         .pipe(gulp.dest('public/dist/'))
 });
 
-
 gulp.task('minify-html', function() {
     var opts = {comments:false,spare:false};
 
@@ -59,13 +59,11 @@ gulp.task('minify-html', function() {
         .pipe(gulp.dest('./public/partials/'));
 });
 
-
 gulp.task('default', function () {
     gulp.start('uglify', 'minify', 'minify-html');
 });
 
 /*
-
 gulp.task('default', function () {
     nodemon({ script: 'app.js', ext: uglifyConfig.ext , ignore: uglifyConfig.ignores })
         .on('crash', function () {
