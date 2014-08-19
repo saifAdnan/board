@@ -9,7 +9,7 @@
       <option name="fileExtension" value="ts" />
       <option name="immediateSync" value="true" />
       <option name="name" value="TypeScript" />
-      <option name="output" value="$FileNameWithoutExtension$.js:$FileNameWithoutExtension$.js.map" />
+      <option name="output" value="$FileNameWithoutExtension$.js" />
       <option name="outputFilters">
         <array>
           <FilterInfo>
