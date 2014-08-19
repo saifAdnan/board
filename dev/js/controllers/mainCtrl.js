@@ -7,13 +7,10 @@ var mainCtrl = (function () {
     mainCtrl.prototype.inc = function () {
         this.count++;
     };
-
     mainCtrl.prototype.dec = function () {
         this.count--;
     };
     mainCtrl.$inject = ['$scope'];
     return mainCtrl;
 })();
-
 app.controller('mainCtrl', mainCtrl);
-//# sourceMappingURL=mainCtrl.js.map

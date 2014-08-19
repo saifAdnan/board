@@ -5,6 +5,9 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglifyjs');
 var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
+var glue = require("gulp-sprite-glue");
+var less = require('gulp-less');
+var path = require('path');
 
 /**
  * Dependencies config
@@ -37,11 +40,11 @@ var uglifyConfig = {
             ],
             dist: './public/dist/app/'
         },
-        angular: {
+        'angular.min': {
             path: 'dev/lib/angular.js',
             dist: './public/dist/lib/'
         },
-        'angular-route': {
+        'angular-route.min': {
             path: 'dev/lib/angular-route.js',
             dist: './public/dist/lib/'
         }
@@ -78,6 +81,25 @@ gulp.task('uglifyJS', function() {
     }
 });
 
+// Sprite images
+gulp.task('glueSprite', function () {
+    gulp.src("./dev/images/")
+        .pipe(glue("./public/images",{
+            less: true,
+            lessTemplate: __dirname + '/dev/images/project.jinja',
+            css: false
+        }));
+});
+
+// less to css
+gulp.task('less', function () {
+    gulp.src('./dev/less/*.less')
+        .pipe(less({
+            paths: [ path.join(__dirname, 'less', 'includes') ]
+        }))
+        .pipe(gulp.dest('./public/css'));
+});
+
 gulp.task('default', function () {
-    gulp.start('minifyCSS', 'minifyHTML', 'uglifyJS');
+    gulp.start('minifyHTML', 'glueSprite', 'less', 'minifyCSS', 'uglifyJS');
 });
