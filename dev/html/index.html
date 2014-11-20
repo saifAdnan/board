@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" data-ng-app="myApp">
     <head>
-        <meta charset="UTF-8">
         <title>ng-strucure</title>
         <link rel="stylesheet" href="./public/css/style.css"/>
     </head>
@@ -9,11 +8,8 @@
 
     <div data-ng-view=""></div>
 
-    <!-- Libraries -->
-    <script src="./public/dist/lib/angular.min.js"></script>
-    <script src="./public/dist/lib/angular-route.min.js"></script>
+    <!-- Requirejs -->
+    <script data-main="./public/js/main" src="./public/lib/requirejs/require.js"></script>
 
-    <!-- NG files -->
-    <script src="./public/dist/app/ng.js"></script>
     </body>
 </html>

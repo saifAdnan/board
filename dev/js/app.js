@@ -1,13 +1,19 @@
 /*global angular*/
-var app = (function () {
+define([
+    'angular',
+    'angular-route'
+], function(angular, ngRoute) {
     "use strict";
-
-    app = angular.module('myApp', ['ngRoute'], ['$interpolateProvider',
+    var app = angular.module('myApp', ['ngRoute'], ['$interpolateProvider',
             function ($interpolateProvider) {
                 $interpolateProvider.startSymbol('{%');
                 $interpolateProvider.endSymbol('%}');
             }]
     );
+
+    app.init = function () {
+        angular.bootstrap(document, ['myApp']);
+    };
 
     //app run
     app.run(['$rootScope',
@@ -23,7 +29,9 @@ var app = (function () {
                 $routeProvider
                     .when('/', {
                         templateUrl: './public/partials/home.html',
-                        controller: 'mainCtrl'
+                        controller: function () {
+                            console.log('hello');
+                        }
                     });
 
                 $locationProvider
@@ -32,6 +40,5 @@ var app = (function () {
             }]
     );
 
-
     return app;
-}());
+});

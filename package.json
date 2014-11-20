@@ -4,7 +4,7 @@
   "description": "Angularjs structure",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.8.7",
+    "gulp": "*",
     "gulp-minify-css": "^0.3.7",
     "gulp-nodemon": "^1.0.4",
     "gulp-typescript": "^1.0.0",

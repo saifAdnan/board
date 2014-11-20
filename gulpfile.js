@@ -2,7 +2,8 @@
  * require dependencies
  */
 var gulp = require('gulp');
-var uglify = require('gulp-uglifyjs');
+var uglify = require('gulp-uglify');
+var gzip = require('gulp-gzip');
 var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
 var glue = require("gulp-sprite-glue");
@@ -27,29 +28,6 @@ var minifyHTMLConfig = {
         partials: './dev/html/partials/*.html'
     }
 };
-var uglifyConfig = {
-    ext: 'dev js css',
-    ignores: ['public/dist/*.*'],
-    files: {
-        ng: {
-            path: [
-                'dev/js/*.js',
-                'dev/js/controllers/*.js',
-                'dev/js/services/*.js',
-                'dev/js/directives/*.js'
-            ],
-            dist: './public/dist/app/'
-        },
-        'angular.min': {
-            path: 'dev/lib/angular.js',
-            dist: './public/dist/lib/'
-        },
-        'angular-route.min': {
-            path: 'dev/lib/angular-route.js',
-            dist: './public/dist/lib/'
-        }
-    }
-};
 
 // Minify CSS
 gulp.task('minifyCSS', function() {
@@ -72,13 +50,23 @@ gulp.task('minifyHTML', function() {
 
 // Uglify JS
 gulp.task('uglifyJS', function() {
-    for (key in uglifyConfig.files) {
-        gulp.src(uglifyConfig.files[key].path)
-            .pipe(uglify(key + '.js', {
-                outSourceMap: false
-            }))
-            .pipe(gulp.dest(uglifyConfig.files[key].dist));
-    }
+    gulp.src('./dev/lib/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./public/lib/'));
+
+    gulp.src('./public/lib/**/*.js')
+        .pipe(uglify())
+        .pipe(gzip())
+        .pipe(gulp.dest('./public/lib/'));
+
+    gulp.src('./dev/js/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./public/js/'));
+
+    gulp.src('./dev/js/**/*.js')
+        .pipe(uglify())
+        .pipe(gzip())
+        .pipe(gulp.dest('./public/js/'));
 });
 
 // Sprite images
@@ -101,5 +89,5 @@ gulp.task('less', function () {
 });
 
 gulp.task('default', function () {
-    gulp.start('minifyHTML', 'glueSprite', 'less', 'minifyCSS', 'uglifyJS');
+    gulp.start('minifyHTML','less', 'minifyCSS', 'uglifyJS');
 });
