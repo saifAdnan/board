@@ -3,7 +3,6 @@
  */
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
-var gzip = require('gulp-gzip');
 var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
 var glue = require("gulp-sprite-glue");
@@ -54,19 +53,10 @@ gulp.task('uglifyJS', function() {
         .pipe(uglify())
         .pipe(gulp.dest('./public/lib/'));
 
-    gulp.src('./public/lib/**/*.js')
-        .pipe(uglify())
-        .pipe(gzip())
-        .pipe(gulp.dest('./public/lib/'));
-
     gulp.src('./dev/js/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./public/js/'));
 
-    gulp.src('./dev/js/**/*.js')
-        .pipe(uglify())
-        .pipe(gzip())
-        .pipe(gulp.dest('./public/js/'));
 });
 
 // Sprite images
