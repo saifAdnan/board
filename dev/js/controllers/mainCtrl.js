@@ -1,16 +1,15 @@
-var mainCtrl = (function () {
-    function mainCtrl($scope) {
-        this.count = 20;
-        this.message = 'Test';
-        $scope.vm = this;
-    }
-    mainCtrl.prototype.inc = function () {
-        this.count++;
-    };
-    mainCtrl.prototype.dec = function () {
-        this.count--;
-    };
-    mainCtrl.$inject = ['$scope'];
-    return mainCtrl;
-})();
-app.controller('mainCtrl', mainCtrl);
+define(['js/app'], function (app) {
+    return app.register.controller('mainCtrl', ['$scope', function ($scope) {
+        $scope.count = 20;
+        $scope.message = "test";
+
+        $scope.inc = function () {
+            console.log(0);
+            $scope.count++;
+        };
+
+        $scope.dec = function () {
+            $scope.count--;
+        }
+    }]);
+});
