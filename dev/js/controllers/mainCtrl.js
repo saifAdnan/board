@@ -1,6 +1,6 @@
 define(['js/app'], function (app) {
     return app.register.controller('mainCtrl', ['$scope', function ($scope) {
-        $scope.count = 20;
+        $scope.count = 50;
         $scope.message = "test";
 
         $scope.inc = function () {

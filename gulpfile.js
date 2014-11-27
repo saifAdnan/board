@@ -56,7 +56,6 @@ gulp.task('uglifyJS', function() {
     gulp.src('./dev/js/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./public/js/'));
-
 });
 
 // Sprite images
