@@ -13,10 +13,9 @@
 
 <title>ВКонтакте для мобильных устройств | ВКонтакте</title>
 
-<link rel="stylesheet" type="text/css" href="http://st0.vk.me/css/al/common.css?491">
-<!--[if lte IE 6]><style type="text/css" media="screen">/* <![CDATA[ */ @import url(http://st0.vk.me/css/al/ie6.css?26); /* ]]> */</style><![endif]-->
-<!--[if IE 7]><style type="text/css" media="screen">/* <![CDATA[ */ @import url(http://st0.vk.me/css/al/ie7.css?18); /* ]]> */</style><![endif]-->
-<link type="text/css" rel="stylesheet" href="http://st0.vk.me/css/al/login.css?51"><link type="text/css" rel="stylesheet" href="http://st0.vk.me/css/al/retina.css?312">
+<link rel="stylesheet" type="text/css" href="common.css">
+<link type="text/css" rel="stylesheet" href="login.css">
+    <link type="text/css" rel="stylesheet" href="http://st0.vk.me/css/al/retina.css">
 </head>
 
 <body onresize="onBodyResize()" class="is_rtl font_default pads is_2x ">
@@ -214,7 +213,7 @@
     <div id="footer_wrap" class="fl_r" style="width: 661px;">
       <div id="bottom_nav">
   <a class="bnav_a" href="/about">о сайте</a>
-  <a class="bnav_a" href="/support?act=new" onclick="return nav.go(this, event);" style="display: none;">помощь</a>
+  <a class="bnav_a" href="/support?act=new"  style="display: none;">помощь</a>
   <a class="bnav_a" href="/terms">правила</a>
   <a class="bnav_a" href="/ads">реклама</a>
   <a class="bnav_a" href="/people">люди</a><a class="bnav_a" href="/communities">сообщества</a>
@@ -222,9 +221,7 @@
   <a class="bnav_a" href="/jobs" style="display: none;">вакансии</a>
 </div>
 <div id="footer" class="clear">
-  <div class="copy_lang"><a href="/about">ВКонтакте</a> © 2014 <a class="bnav_lang" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 3, hash: '86dc53cc3a8013216b'})">English</a><a class="bnav_lang" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 0, hash: '86dc53cc3a8013216b'})">Русский</a><a class="bnav_lang" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 1, hash: '86dc53cc3a8013216b'})">Українська</a><a class="bnav_lang" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">все языки »</a></div>
-  
-  <div>
+
     
     
   </div>
